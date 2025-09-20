@@ -36,16 +36,16 @@ const Invitacion = () => {
 
       <div
         className="relative flex flex-col justify-center items-center min-h-screen w-full text-center bg-center bg-cover font-eleganteText space-y-5 overflow-hidden"
-        style={{ backgroundImage: "url('https://res.cloudinary.com/dfschbyq2/image/upload/v1742341160/Fondo_de_Pantalla_Computador_Simple_Beige_18_gyfe4i.png')" }}
+        style={{ backgroundImage: "url('https://res.cloudinary.com/dfschbyq2/image/upload/v1758380907/Beige_Simple_Abstract_Aesthetic_Desktop_Wallpaper_1_tyfe17.jpg')" }}
       >
         <div data-aos="fade-in">
-            <p className="text-2xl mb-5 tracking-widest">Te invito a mis 15</p>
-            <h1 className="text-7xl md:text-[10rem] font-brushNames text-[#4b5147] z-10 italic">
+            <p className="text-2xl mb-8 tracking-widest">Te invito a mis 15</p>
+            <h1 className="text-8xl md:text-[10rem] font-brushNames text-golden z-10 italic">
             Martina
             </h1>
 
             <div className="flex items-center justify-center py-2 px-4 mt-5">
-            <p className="font-bold text-[#4b5147] text-lg tracking-widest">
+            <p className="font-bold text-[#4b5147] text-2xl tracking-widest">
                 1 8 . 1 0 . 2 0 2 5
             </p>
             </div>
@@ -183,8 +183,8 @@ const Invitacion = () => {
             linkAsistencia="https://docs.google.com/forms/d/e/1FAIpQLScbLvFSZl7l8ls-IBKZvbAgdHKDCk3Jb08I-BKk69amR5ruVA/viewform?usp=header"
           />
 
-        <div className="font-eleganteText text-xl bg-white">
-          <TextoFinal textoFinal="Este día para mí va a ser un momento inolvidable, lo voy a atesorar para siempre en mi corazón y quiero q seas parte." />
+        <div className="font-eleganteText text-xl bg-white font-semibold">
+          <TextoFinal textoFinal="Este día para mí va a ser un momento inolvidable, lo voy a atesorar para siempre en mi corazón y quiero q seas parte" />
         </div>
 
         <Footer />

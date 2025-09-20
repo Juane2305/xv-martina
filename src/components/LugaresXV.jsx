@@ -31,10 +31,10 @@ const Places = ({ salon }) => {
         <h2 className="text-3xl sm:text-4xl font-bold text-gray-800 uppercase tracking-wider mb-4">
           Fiesta
         </h2>
-        <p className="text-base sm:text-lg text-gray-600 leading-relaxed text-center">
-          ¡Te esperamos en <span className="font-semibold">{salon}</span>!<br />
+        <p className="text-lg text-gray-800 leading-relaxed text-center">
+          ¡Te esperamos en <span className="font-bold text-xl">{salon}</span>!<br />
           Daremos inicio a la fiesta desde las{" "}
-          <span className="font-semibold">21:00 hs</span> hasta las <span className="font-semibold">04:00 hs</span>.
+          <span className="font-bold text-xl">21:00 hs</span> hasta las <span className="font-semibold">04:00 hs</span>.
         </p>
       </div>
     </section>
