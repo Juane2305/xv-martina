@@ -1,0 +1,9 @@
+@import "tailwindcss";
+
+@theme{
+    --font-eleganteText: 'Libertinus Serif Display', serif;
+    --font-brushNames: 'Marck Script', cursive;
+    --font-eleganteTitle: 'Tangerine', cursive;
+
+    --color-golden: #cab135;
+}
