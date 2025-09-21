@@ -32,14 +32,14 @@ const GoogleCalendarButton = ({
           style={{ width: "100%", height: "100%"}}
         />
       </div>{" "}
-      <h3 className={`text-lg font-light ${titleClass}`}>
+      <h3 className={`text-2xl font-light  ${titleClass}`}>
         Agrega el evento al calendario de Google:
       </h3>
       <a
         href={googleCalendarUrl}
         target="_blank"
         rel="noopener noreferrer"
-        className={`border-2 py-3 px-6 transform transition-transform duration-300 ease-in-out hover:scale-105  ${buttonClass}`}
+        className={`border-2 py-3 px-6 transform transition-transform duration-300 ease-in-out hover:scale-105 text-xl  ${buttonClass}`}
       >
         Agregar al Calendario
       </a>

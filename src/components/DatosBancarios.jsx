@@ -21,7 +21,7 @@ const DatosBancarios = ({texto, claseContenedor, claseBoton, borderModal, textCo
         <MiIconoGift/>
       </div>
         <div className={`flex flex-col items-center justify-center`}>
-          <p className={`text-center px-5 md:px-0 ${textSize} text-gray-800`} data-aos= 'fade-up'>{texto}</p>
+          <p className={`text-center px-5 md:px-0 text-2xl text-gray-800`} data-aos= 'fade-up'>{texto}</p>
           <Modal 
             claseBoton={claseBoton} 
             claseBotonModal={claseBotonModal} 

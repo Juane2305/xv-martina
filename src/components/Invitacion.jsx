@@ -1,4 +1,3 @@
-
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
@@ -14,7 +13,7 @@ import TextoFinal from "./TextoFinal";
 import LugaresXV from "./LugaresXV";
 import { FocusCardsDemo } from "./FocusCardsDemo";
 import decoracionImagenes from "../assets/esmeralda/decoracionImagenes.svg";
-
+import starsDecoration from '../assets/starsDecoration.svg';
 import DressCodeEsmeralda from "./DressCodeEsmeralda";
 
 const Invitacion = () => {
@@ -36,7 +35,7 @@ const Invitacion = () => {
 
       <div
         className="relative flex flex-col justify-center items-center min-h-screen w-full text-center bg-center bg-cover font-eleganteText space-y-5 overflow-hidden"
-        style={{ backgroundImage: "url('https://res.cloudinary.com/dfschbyq2/image/upload/v1758380907/Beige_Simple_Abstract_Aesthetic_Desktop_Wallpaper_1_tyfe17.jpg')" }}
+        style={{ backgroundImage: "url('https://res.cloudinary.com/dfschbyq2/image/upload/v1758469515/Beige_Simple_Abstract_Aesthetic_Desktop_Wallpaper_7_pgqgek.jpg')" }}
       >
         <div data-aos="fade-in">
             <p className="text-2xl mb-8 tracking-widest">Te invito a mis 15</p>
@@ -69,6 +68,11 @@ const Invitacion = () => {
           </section>
 
         <section id="lugares" className="relative text-center bg-white">
+          {/* Deco: Lugares */}
+          <div className="pointer-events-none relative">
+            <img src={starsDecoration} alt="deco" className="hidden md:block absolute -top-4 left-6 w-6 opacity-70" />
+            <img src={starsDecoration} alt="deco" className="hidden md:block absolute -top-4 right-6 w-6 opacity-70 rotate-6" />
+          </div>
           <LugaresXV
             iglesia="[Nombre iglesia]"
             hora_iglesia="10:00hs"
@@ -135,6 +139,9 @@ const Invitacion = () => {
           </div>
 
           <div className="bg-golden text-center relative text-white">
+            {/* Deco: Agendar evento */}
+            <img src={starsDecoration} alt="deco" className="absolute left-4 top-3 w-5 opacity-70" />
+            <img src={starsDecoration} alt="deco" className="absolute right-4 bottom-3 w-6 opacity-70 rotate-3" />
             <GoogleCalendarButton
               imgClass="text-[#4b5147]"
               buttonClass="border-white bg-white text-gray-800 rounded-full"
@@ -146,45 +153,58 @@ const Invitacion = () => {
           </div>
 
           <div className="relative bg-white py-10">
+            {/* Deco: Dress Code */}
+            <img src={starsDecoration} alt="deco" className="absolute left-6 top-4 w-10 opacity-60" />
+            <img src={starsDecoration} alt="deco" className="absolute right-6 bottom-5 w-10 opacity-60 -rotate-6" />
             <DressCodeEsmeralda dressCode="Elegante Sport" icon={dress}/>
           </div>
 
-          <DatosBancarios
-            claseIcon="text-white"
-            texto="Si deseas hacerme un regalo, te dejo los datos"
-            claseContenedor=" text-white"
-            claseBoton="rounded-full hover:shadow-lg border-white bg-gray-100 text-gray-900"
-            textSize="text-lg"
-            background={{ backgroundColor: 'white' }}
-            styleBotonModal={{
-              backgroundColor: "white",
-              borderColor: "#9eba8a",
-            }}
-            claseBotonModal={{
-              backgroundColor: "#4b5147",
-              borderColor: "#4b5147",
-            }}
-            styleModal={{ backgroundColor: colorSecundario }}
-            styleBorderModal={{ borderColor: colorPrincipal }}
-            styleTextColor={{ color: colorPrincipal }}
-            cbu="0000003100025490737274"
-            alias="martinaagostini2010"
-            banco="Nombre Banco"
-            nombre="MARTINA AGOSTINI"
-            claseModal="bg-[#4b5147]"
-            borderModal="border-[#4b5147]"
-            textColor="text-[#4b5147]"
-          />
+          <div className="relative bg-white">
+            <DatosBancarios
+              claseIcon="text-white"
+              texto="Si deseas hacerme un regalo, te dejo los datos"
+              claseContenedor=" text-white"
+              claseBoton="rounded-full hover:shadow-lg border-white bg-gray-100 text-gray-900"
+              textSize="text-lg"
+              background={{ backgroundColor: 'white' }}
+              styleBotonModal={{
+                backgroundColor: "white",
+                borderColor: "#9eba8a",
+              }}
+              claseBotonModal={{
+                backgroundColor: "#4b5147",
+                borderColor: "#4b5147",
+              }}
+              styleModal={{ backgroundColor: colorSecundario }}
+              styleBorderModal={{ borderColor: colorPrincipal }}
+              styleTextColor={{ color: colorPrincipal }}
+              cbu="0000003100025490737274"
+              alias="martinaagostini2010"
+              banco="Nombre Banco"
+              nombre="MARTINA AGOSTINI"
+              claseModal="bg-[#4b5147]"
+              borderModal="border-[#4b5147]"
+              textColor="text-[#4b5147]"
+            />
+          </div>
 
-          <Asistencia
-            clase="py-10 bg-white bg-fixed border-b-4 border-[#cab135]"
-            claseTitle="text-[#4b5147]"
-            claseButton="border-2 border-[#cab135] font-semibold hover:bg-[#cab135]  text-gray-700 hover:text-white rounded-full"
-            linkAsistencia="https://docs.google.com/forms/d/e/1FAIpQLScbLvFSZl7l8ls-IBKZvbAgdHKDCk3Jb08I-BKk69amR5ruVA/viewform?usp=header"
-          />
+          <div className="relative">
+            <img src={starsDecoration} alt="deco" className="absolute right-6 top-1 w-10 opacity-70 rotate-3" />
+            <Asistencia
+              clase="py-10 bg-white bg-fixed border-b-4 border-[#cab135]"
+              claseTitle="text-[#4b5147]"
+              claseButton="border-2 border-[#cab135] font-semibold hover:bg-[#cab135]  text-gray-700 hover:text-white rounded-full"
+              linkAsistencia="https://docs.google.com/forms/d/e/1FAIpQLScbLvFSZl7l8ls-IBKZvbAgdHKDCk3Jb08I-BKk69amR5ruVA/viewform?usp=header"
+            />
+          </div>
 
-        <div className="font-eleganteText text-xl bg-white font-semibold">
-          <TextoFinal textoFinal="Este día para mí va a ser un momento inolvidable, lo voy a atesorar para siempre en mi corazón y quiero q seas parte" />
+          {/* Deco: Texto final */}
+          <div className="relative bg-white">
+            <img src={starsDecoration} alt="deco" className="absolute left-6 -top-14 w-10 opacity-70" />
+          </div>
+
+        <div className="font-eleganteText text-xl bg-white font-semibold py-10">
+          <TextoFinal textoFinal="Este día para mí va a ser un momento inolvidable, lo voy a atesorar para siempre en mi corazón y quiero que seas parte" textClass="text-2xl"/>
         </div>
 
         <Footer />
