@@ -12,7 +12,6 @@ import Footer from "./Footer";
 import TextoFinal from "./TextoFinal";
 import LugaresXV from "./LugaresXV";
 import { FocusCardsDemo } from "./FocusCardsDemo";
-import decoracionImagenes from "../assets/esmeralda/decoracionImagenes.svg";
 import starsDecoration from '../assets/starsDecoration.svg';
 import DressCodeEsmeralda from "./DressCodeEsmeralda";
 
@@ -35,7 +34,7 @@ const Invitacion = () => {
 
       <div
         className="relative flex flex-col justify-center items-center min-h-screen w-full text-center bg-center bg-cover font-eleganteText space-y-5 overflow-hidden"
-        style={{ backgroundImage: "url('https://res.cloudinary.com/dfschbyq2/image/upload/v1758469515/Beige_Simple_Abstract_Aesthetic_Desktop_Wallpaper_7_pgqgek.jpg')" }}
+        style={{ backgroundImage: "url('https://res.cloudinary.com/dfschbyq2/image/upload/v1758549316/Disen%CC%83o_sin_ti%CC%81tulo_63_xldst5.png')" }}
       >
         <div data-aos="fade-in">
             <p className="text-2xl mb-8 tracking-widest">Te invito a mis 15</p>
@@ -68,7 +67,6 @@ const Invitacion = () => {
           </section>
 
         <section id="lugares" className="relative text-center bg-white">
-          {/* Deco: Lugares */}
           <div className="pointer-events-none relative">
             <img src={starsDecoration} alt="deco" className="hidden md:block absolute -top-4 left-6 w-6 opacity-70" />
             <img src={starsDecoration} alt="deco" className="hidden md:block absolute -top-4 right-6 w-6 opacity-70 rotate-6" />
@@ -88,22 +86,14 @@ const Invitacion = () => {
 
           <div className="relative bg-white">
             <img
-              src={decoracionImagenes}
+              src={starsDecoration}
               alt="Decoración lateral"
-              className="hidden md:block absolute -left-44 top-1/2 transform -translate-y-1/2 pointer-events-none"
-              style={{
-                width: "30rem",
-                transform: "translateY(-50%) scaleX(-1)",
-
-              }}
+              className="hidden md:block absolute -left-20 top-1/2 transform -translate-y-1/2 pointer-events-none w-[20rem] opacity-70"
             />
             <img
-              src={decoracionImagenes}
+              src={starsDecoration}
               alt="Decoración lateral invertida"
-              className="hidden md:block absolute -right-44 top-1/2 transform -translate-y-1/2 pointer-events-none"
-              style={{
-                 width: "30rem" ,
-                }}
+              className="hidden md:block absolute -right-20 top-1/2 transform -translate-y-1/2 pointer-events-none w-[20rem] opacity-70"
             />
             <section className="pb-16">
                 <FocusCardsDemo

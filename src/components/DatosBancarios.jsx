@@ -5,7 +5,7 @@ import 'aos/dist/aos.css';
 import MiIconoGift from './DatosBancariosIcon';
 
 
-const DatosBancarios = ({texto, claseContenedor, claseBoton, borderModal, textColor, textSize, cbu, alias, banco, nombre, claseBotonModal, claseModal, moneda_extranjera, tipo_cuenta, numero_cuenta, titular_extranjera, banco_extranjera, styleBotonModal, styleModal, styleBorderModal, styleTextColor, background}) => {
+const DatosBancarios = ({texto, claseContenedor, claseBoton, borderModal, textColor, cbu, alias, banco, nombre, claseBotonModal, claseModal, moneda_extranjera, tipo_cuenta, numero_cuenta, titular_extranjera, banco_extranjera, styleBotonModal, styleModal, styleBorderModal, styleTextColor, background}) => {
 
   useEffect(() => {
     AOS.init({
